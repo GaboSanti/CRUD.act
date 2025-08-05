@@ -35,8 +35,13 @@ public class HelloController {
 
     }
 
+    @FXML
+    protected void irRegistro(ActionEvent event) throws IOException{
+        cambioVentana("Registro.fxml", event, "Registro");
+    }
 
-        private boolean compararDatos(String correo, String password) {
+
+    private boolean compararDatos(String correo, String password) {
         Connection conn = null;
         PreparedStatement stmt = null;
         ResultSet rs = null;
