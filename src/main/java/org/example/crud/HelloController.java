@@ -22,7 +22,18 @@ public class HelloController {
     private TextField txt2;
 
 
+    @FXML
+    protected void irConsulta(ActionEvent event) throws IOException{
+        String correoIngresado = txt1.getText();
+        String passwordIngresado = txt2.getText();
 
+        if (compararDatos(correoIngresado, passwordIngresado)) {
+            Usuario.setCorreo(correoIngresado);
+            cambioVentana("Horario.fxml", event, "Horario");
+        }else {
+        }
+
+    }
 
 
         private boolean compararDatos(String correo, String password) {
