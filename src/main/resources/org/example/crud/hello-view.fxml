@@ -13,9 +13,11 @@
             <Image url="@../../../../../imagenes/descarga.png" />
          </image>
       </ImageView>
-      <TextField layoutX="225.0" layoutY="200.0" />
+      <TextField fx:id="txt1" layoutX="225.0" layoutY="200.0" onAction="#txt2" />
       <TextField layoutX="225.0" layoutY="264.0" />
-      <Button layoutX="274.0" layoutY="314.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="252.0" layoutY="352.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Resgitrate aqui" />
+      <Button fx:id="login" layoutX="257.0" layoutY="314.0" mnemonicParsing="false" onAction="#irConsulta" text="Iniciar sesion" />
+      <Button fx:id="registrarse" layoutX="252.0" layoutY="352.0" mnemonicParsing="false" onAction="#irRegistro" style="-fx-background-color: transparent;" text="Resgitrate aqui" />
+      <Label layoutX="225.0" layoutY="183.0" text="Correo" />
+      <Label layoutX="225.0" layoutY="247.0" text="Contraseña" />
    </children>
 </AnchorPane>
