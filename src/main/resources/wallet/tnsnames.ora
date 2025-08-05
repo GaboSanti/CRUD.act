@@ -1,0 +1,8 @@
+prueba_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=gd26bc1f7c447f3_prueba_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+prueba_low = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=gd26bc1f7c447f3_prueba_low.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+prueba_medium = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=gd26bc1f7c447f3_prueba_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+
+
