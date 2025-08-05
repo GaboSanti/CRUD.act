@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.crud.ConsultaController">
+   <children>
+      <Label layoutX="286.0" layoutY="35.0" text="Usuarios " />
+      <Label fx:id="lblId" layoutX="88.0" layoutY="111.0" prefHeight="23.0" prefWidth="89.0" text="ID" />
+      <Label fx:id="lblNombre" layoutX="88.0" layoutY="199.0" prefHeight="23.0" prefWidth="114.0" text="Nombre" />
+      <Label fx:id="lblContraseña" layoutX="87.0" layoutY="351.0" prefHeight="23.0" prefWidth="163.0" text="Contraseña" />
+      <Label fx:id="lblCorreo" layoutX="87.0" layoutY="282.0" prefHeight="23.0" prefWidth="283.0" text="Correo" />
+      <Label layoutX="85.0" layoutY="78.0" prefHeight="17.0" prefWidth="60.0" text="ID Usuario" />
+      <Label layoutX="83.0" layoutY="163.0" prefHeight="23.0" prefWidth="80.0" text="Nombre" />
+      <Label layoutX="91.0" layoutY="253.0" prefHeight="17.0" prefWidth="49.0" text="Correo" />
+      <Label layoutX="90.0" layoutY="331.0" prefHeight="17.0" prefWidth="73.0" text="Contraseña" />
+   </children>
+</AnchorPane>
