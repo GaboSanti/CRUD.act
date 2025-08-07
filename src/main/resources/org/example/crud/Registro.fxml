@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../Registro.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.crud.Registro">
+
+    <VBox alignment="CENTER" layoutX="450.0" layoutY="41.0" prefHeight="372.0" prefWidth="450.0" spacing="12" stylesheets="@../../../StyleRegistro.css" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="41.0">
+
+        <Label styleClass="title" text="REGISTRO" />
+
+        <TextField fx:id="txtNombre" promptText="NOMBRE" />
+        <TextField fx:id="txtCorreo2" promptText="CORREO PERSONAL" />
+        <HBox spacing="5">
+            <PasswordField fx:id="txtPassword" prefWidth="250" promptText="CONTRASEÑA" />
+            <TextField fx:id="txtPasswordVisible" managed="false" prefWidth="250" promptText="CONTRASEÑA" visible="false" />
+            <Button fx:id="btnTogglePassword" text="👁" />
+        </HBox>
+
+        <Label fx:id="lblPasswordHint" style="-fx-text-fill: red; -fx-font-size: 11px;" wrapText="true" />
+
+        <PasswordField fx:id="txtConfirmarPassword" promptText="CONFIRMAR CONTRASEÑA" />
+        <Label fx:id="lblConfirmarPasswordHint" style="-fx-text-fill: red; -fx-font-size: 11px;" wrapText="true" />
+
+        <Button fx:id="btn_registrar" styleClass="register-button" text="REGISTRAR" />
+    </VBox>
+</AnchorPane>
