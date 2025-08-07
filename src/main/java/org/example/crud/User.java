@@ -12,7 +12,7 @@ public class User {
 
 
     public boolean validarCredenciales(String correo, String contrasena) {
-        String query = "SELECT COUNT(*) FROM usuarios WHERE correo_institucional = ? AND contrasena = ?";
+        String query = "SELECT COUNT(*) FROM crud WHERE correo = ? AND contrasena = ?";
         try (Connection conn = ConexionBD.getConnection();
              PreparedStatement stmt = conn.prepareStatement(query)) {
 
@@ -23,21 +23,20 @@ public class User {
             if (rs.next()) {
                 return rs.getInt(1) > 0;
             }
-        } catch (SQLException e) {//Captura cualquier excepción SQL que pueda ocurrir durante la operación de la base de datos
+        } catch (SQLException e) {
             System.err.println("Error al validar credenciales: " + e.getMessage());//imprime el mensaje de error
         }
-        return false;//Si ocurre una excepción o no se encuentran las credenciales, la funcion devuelve false
+
+        return false;
     }
 
-    //Obtiene todos los datos de un usuario a partir de su correo institucional.
 
-    public UsuarioBD obtenerUsuarioPorCorreoInstitucional(String correoInstitucional) {
-        //Recupera todos los detalles de un usuario de la base de datos basándose en su correoInstitucional
-        String query = "SELECT nombre, apellido_paterno, apellido_materno, grado_academico, correo_personal, numero_telefono, correo_institucional, contrasena FROM usuarios WHERE correo_institucional = ?";
+    public UsuarioBD obtenerUsuarioPorCorreo(String correo) {
+        String query = "SELECT correo, nombre, contrasena FROM crud WHERE correo = ?";
         try (Connection conn = ConexionBD.getConnection(); // Usa ConexionBDRegistro
              PreparedStatement stmt = conn.prepareStatement(query)) {
 
-            stmt.setString(1, correoInstitucional);
+            stmt.setString(1, correo);
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
