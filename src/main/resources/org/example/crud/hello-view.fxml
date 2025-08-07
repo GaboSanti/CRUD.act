@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.crud.HelloController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="303.0" layoutX="191.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" width="218.0" />
       <ImageView fitHeight="150.0" fitWidth="218.0" layoutX="225.0" pickOnBounds="true" preserveRatio="true">
@@ -13,8 +13,8 @@
             <Image url="@../../../../../imagenes/descarga.png" />
          </image>
       </ImageView>
-      <TextField fx:id="txt1" layoutX="225.0" layoutY="200.0" onAction="#txt2" />
-      <TextField layoutX="225.0" layoutY="264.0" />
+      <TextField fx:id="txt1" layoutX="225.0" layoutY="200.0" />
+      <TextField fx:id="txt2" layoutX="225.0" layoutY="264.0" />
       <Button fx:id="login" layoutX="257.0" layoutY="314.0" mnemonicParsing="false" onAction="#irConsulta" text="Iniciar sesion" />
       <Button fx:id="registrarse" layoutX="252.0" layoutY="352.0" mnemonicParsing="false" onAction="#irRegistro" style="-fx-background-color: transparent;" text="Resgitrate aqui" />
       <Label layoutX="225.0" layoutY="183.0" text="Correo" />
