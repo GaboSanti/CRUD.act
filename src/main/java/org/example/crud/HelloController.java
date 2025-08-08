@@ -29,7 +29,7 @@ public class HelloController {
 
         if (compararDatos(correoIngresado, passwordIngresado)) {
             Usuario.setCorreo(correoIngresado);
-            cambioVentana("Horario.fxml", event, "Horario");
+            cambioVentana("Consulta.fxml", event, "Consulta");
         }else {
         }
 
@@ -48,7 +48,7 @@ public class HelloController {
 
         try {
             conn = ConexionBD.getConnection();
-            String sql = "SELECT COUNT(*) FROM usuarios WHERE correo = ? AND password = ?";
+            String sql = "SELECT COUNT(*) FROM crud WHERE correo = ? AND password = ?";
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, correo);
             stmt.setString(2, password);
